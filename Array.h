@@ -20,6 +20,12 @@ private:
     int* data_;
     int capacity_;
     int size_;
+    
+    
+    bool IsValidIndex(int index) const;
+    bool IsValidInsertIndex(int index) const;
+    void ShiftRight(int startIndex);
+    void ShiftLeft(int startIndex);
 };
 
 #endif  // ARRAY_H
